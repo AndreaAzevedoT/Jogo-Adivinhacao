@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Adivinhação</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script> 
+    <link rel="stylesheet" href="style.css"> 
 </head>
-<body>
+<body onload="inicio()">
 
 
-    <h1>Adivinhe o número!</h1>
+    <div id="tituloinicial"> <h1>Adivinhe o número!</h1> </div>
 
-    <h4> Estou pensando <br/>
+    <p id="subtitulo"> Estou pensando <br/>
          em um número de 1 a 100, <br/>
-        você só tem 10 tentativas:<br/> </h4>
+        você só tem 10 tentativas:<br/></p>
     
 
-    <input type="text" id="numeroChute" onclick="tocarMusicaDeFundo()"><br/>
+    <input
+    type="text"
+    id="numeroChute"
+    onclick='tocarMusicaDeFundo()'>
+    
+
 
     <button onclick="verificaChute()" id="botaoChute"> Adivinhar</button> 
 
+    <audio preload autoplay loop
+          id='musicaFundo'
+          src="Musica_Suspense.mp3"></audio>
 
-
+          <button
+          id='btnSom'
+          class='botao'
+          onClick=ativarDesativarMusica()  
+      >&#9835; </button>
 
     <footer id="rodape">
         <p>Jogo criado por <a href="https://github.com/AndreaAzevedoT" target="_blank">Andrea Azevedo</a> </p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,7 +1,9 @@
+function inicio(){
 //carregar site antes do alerta de desafio para jogar
 setTimeout(function(){
     alert("Você se considera bom em adivinhação? Vamos jogar um jogo!");
 },300); 
+}
 
 function mostra(mensagem) {
     document.write("<h3>" + mensagem + "</h3>")
@@ -46,6 +48,7 @@ const numeroMaximoTentativas = 11;
 let numeroTentativas = 1;
 let numeroPensado = sorteia(100);
 console.log(numeroPensado)
+let musica = document.querySelector('#musicaDeFundo')
 let campoChute = document.getElementById("numeroChute");
 
 campoChute.focus();
@@ -98,3 +101,14 @@ campoChute.addEventListener("keypress", function(cliqueEnter) {
     }
 });
 
+function tocarMusicaDeFundo(){
+    musica.play()
+}
+
+function ativarDesativarMusica(){
+    if(musica.muted){
+        musica.muted = false;
+    } else {
+        musica.muted = true;
+    }
+}

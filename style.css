@@ -8,7 +8,7 @@ html, body {
 body{
     font-family:'JetBrains Mono', monospace;
     text-align: center;
-    padding-top: 240px;
+    padding-top: 140px;
     margin: 1%;
     background-image: url("Gato-filhote-7.jpg");
     background-size: cover;
@@ -16,7 +16,7 @@ body{
 
 }
 
-h1 {
+#tituloinicial {
     font-weight: bold;
     padding-bottom: 30px;
     color: rgb(226, 43, 171);
@@ -24,10 +24,10 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h4 {
+#subtitulo {
     font-size: x-large;
     color: rgb(12, 10, 11);
-    padding: 10px 90px 50px 300px;
+    margin-left: 15%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -35,7 +35,7 @@ h4 {
    color:rgb(226, 43, 171);
    font-size: large;
    border-radius: 30px;
-   margin-left: 15%;
+   margin-left: 1%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -53,6 +53,18 @@ h4 {
         text-align: center;
         font-size: 0.8em;
         position: absolute;
+        margin-top: 10%;
         width: 100%;
+    }
+
+
+       #btnSom {
+        padding: 5px;
+        border: 0;
+        border-radius: 5px;
+        background: #222;
+        color: #f80880;
+        cursor: pointer;
+        outline: none;
     }
     
